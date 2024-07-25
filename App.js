@@ -2,10 +2,12 @@ const express = require('express');
 
 const App = express();
 
+App.set("view engine", "ejs");
+App.use(express.static("public"));
 
 
 App.get('/', (req, res) => {
-    res.send("<h1>Welcome</h1>");
+    res.render("gq")
 })
 
 const PORT = process.env.PORT || 5678;
