@@ -6,36 +6,19 @@ App.set("view engine", "ejs");
 App.use(express.static("public"));
 
 
-App.get('/', (req, res) => {
-    res.render("gqa")
-})
 
-App.get('/aptitude', (req, res) => {
-    res.render("p/aptitude-gqa")
-})
+/// Routing Section 
+const navigation = require('./routes/route/route')
+const auth = require('./routes/route/auth')
+const api = require('./routes/api/api')
+const fe = require('./routes/route/fe')
 
-App.get('/random', (req, res) => {
-    res.render("p/random-gqa")
-})
-
-App.get('/subject', (req, res) => {
-    res.render("p/subject-gqa")
-})
-
-App.get('/stream', (req, res) => {
-    res.render("p/stream-gqa")
-})
+App.use('/', navigation)
+App.use('/', auth)
+App.use('/api', api)
+App.use('/fe', fe)
 
 
-
-
-App.get('/login', (req, res) => {
-    res.render("p/login-gqa")
-})
-
-App.get('/signup', (req, res) => {
-    res.render("p/signup-gqa")
-})
 
 
 const PORT = process.env.PORT || 5678;
