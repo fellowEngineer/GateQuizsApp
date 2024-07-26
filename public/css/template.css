@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Navber section  */
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 70px; /* Increased height of the navbar */
+}
+
+.logo {
+    color: #f2f2f2;
+    font-size: 28px; /* Adjusted font size for a more stylish look */
+    font-family: 'Arial Black', sans-serif; /* Stylish font for the logo */
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: transform 0.3s ease; /* Animation for the logo */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Slightly enlarge the logo on hover */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 15px; /* Increased spacing between menu items */
+    position: relative;
+}
+
+.navbar a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 25px; /* Increased padding for better hover effect */
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Animation for the hover effect */
+}
+
+.navbar a:hover {
+    background-color: #555;
+    color: #fff;
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        width: 100%;
+        text-align: left;
+        padding: 0;
+    }
+
+    .navbar li {
+        display: block;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+}
+
+
+
+
+/* footer section */
+
+footer {
+    background-color: #333;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+.social-links {
+    margin-bottom: 15px;
+}
+
+.social-link {
+    color: #f2f2f2;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px; /* Adjust font size as needed */
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #ddd;
+    text-decoration: underline; /* Underline on hover */
+}
+
+.footer-message {
+    font-size: 18px;
+}
+
+.heart-icon {
+    color: red;
+    font-size: 20px;
+    animation: pulse 1s infinite; /* Pulse animation for heart icon */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
