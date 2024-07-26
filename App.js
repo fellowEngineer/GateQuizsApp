@@ -26,6 +26,9 @@ App.get('/stream', (req, res) => {
     res.render("p/stream-gqa")
 })
 
+
+
+
 App.get('/login', (req, res) => {
     res.render("p/login-gqa")
 })

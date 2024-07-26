@@ -11,6 +11,8 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    
 }
 
 
@@ -82,6 +84,143 @@ body {
         margin-bottom: 5px;
     }
 }
+
+
+
+/* Questions Section  */
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    width: 80%; /* Increased width to make the card larger */
+    max-width: 800px; /* Increased max-width for larger screens */
+    border-radius: 30px;
+    background: lightgrey;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+    display: flex;
+    flex-direction: column;
+    padding: 30px; /* Increased padding for larger card */
+    position: relative;
+    box-sizing: border-box;
+}
+
+.question {
+    margin-bottom: 30px; /* Adjusted margin for more spacing */
+    text-align: left;
+}
+
+.question h2 {
+    font-size: 28px; /* Increased font size for larger card */
+    margin: 0;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Increased gap between option rows */
+}
+
+.option-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.option {
+    flex: 0 1 40%; /* Each option takes up 40% of the width */
+    padding: 15px; /* Increased padding for larger buttons */
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    font-size: 18px; /* Adjusted font size for larger card */
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 0 15px; /* Increased margin for more space between options */
+}
+
+.option:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+.option input[type="radio"] {
+    appearance: none;
+    width: 25px; /* Increased size for radio buttons */
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.option input[type="radio"]:checked {
+    background-color: #007bff;
+}
+
+.option input[type="radio"]:checked::after {
+    content: "";
+    display: block;
+    width: 15px; /* Increased size for checked indicator */
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px; /* Increased margin for more space above button */
+}
+
+.next-button {
+    width: 180px; /* Increased width for larger button */
+    height: 60px; /* Increased height for larger button */
+    padding: 10px 20px; /* Increased padding for larger button */
+    border: none;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 22px; /* Increased font size for larger button text */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.next-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
