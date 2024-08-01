@@ -1,4 +1,4 @@
-const express = require('express');
+import express from 'express';
 
 const App = express();
 
@@ -8,10 +8,10 @@ App.use(express.static("public"));
 
 
 /// Routing Section 
-const navigation = require('./routes/route/route')
-const auth = require('./routes/route/auth')
-const api = require('./routes/api/api')
-const fe = require('./routes/route/fe')
+import navigation from './routes/route/route.js';
+import auth from './routes/route/auth.js';
+import api from './routes/api/api.js';
+import fe from './routes/route/fe.js';
 
 App.use('/', navigation)
 App.use('/', auth)
