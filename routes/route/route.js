@@ -1,5 +1,5 @@
-const express = require('express');
-const navigation = express.Router();
+import { Router } from 'express';
+const navigation = Router();
 
 
 ///Navigation Routes
@@ -27,4 +27,4 @@ navigation.get('/stream', (req, res) => {
 
 
 
-module.exports = navigation;
+export default navigation;

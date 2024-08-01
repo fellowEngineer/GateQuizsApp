@@ -1,5 +1,5 @@
-const express = require('express');
-const fe = express.Router();
+import { Router } from 'express';
+const fe = Router();
 
 
 fe.get('/home', (req, res) => {
@@ -8,4 +8,4 @@ fe.get('/home', (req, res) => {
 
 
 
-module.exports = fe;
+export default fe;

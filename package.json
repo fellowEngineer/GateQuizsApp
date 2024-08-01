@@ -1,11 +1,26 @@
 {
+  "name": "gatequizsapp",
+  "version": "1.0.0",
+  "description": "A Gate Quiz App for Gate exam preparation",
+  "main": "App.js",
+  "keywords": [
+    "GQA",
+    "Gate"
+  ],
+  "author": "FellowEngineer",
+  "license": "MIT",
+  "type": "module",
   "dependencies": {
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
-    "nodemon": "^3.1.4"
+    "mongoose": "^8.5.2"
   },
   "scripts": {
-    "start": "nodemon App.js"
+    "start": "node App.js",
+    "dev": "nodemon App.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
   }
 }
