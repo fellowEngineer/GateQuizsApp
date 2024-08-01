@@ -37,7 +37,7 @@ const streamSchema = mongoose.Schema(
         },
         description: {
             type: String,
-            trim: true,
+            trim: true
         }
     }, 
     
