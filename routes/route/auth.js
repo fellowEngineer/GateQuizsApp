@@ -1,5 +1,5 @@
-const express = require('express');
-const auth = express.Router();
+import { Router } from 'express';
+const auth = Router();
 
 
 auth.get('/login', (req, res) => {
@@ -12,4 +12,4 @@ auth.get('/signup', (req, res) => {
 
 
 
-module.exports = auth;
+export default auth;
