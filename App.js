@@ -3,6 +3,8 @@ import express from 'express';
 const App = express();
 
 App.set("view engine", "ejs");
+
+App.use(express.urlencoded({extended : true}));
 App.use(express.static("public"));
 
 
