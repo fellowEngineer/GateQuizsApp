@@ -2,10 +2,19 @@ import express from 'express';
 
 const App = express();
 
-App.set("view engine", "ejs");
 
-App.use(express.urlencoded({extended : true}));
-App.use(express.static("public"));
+// Set EJS as the view engine
+App.set('view engine', 'ejs');
+
+// Middleware to parse URL-encoded bodies (e.g., form submissions)
+App.use(express.urlencoded({ extended: true }));
+
+// Middleware to parse JSON bodies (e.g., API requests)
+App.use(express.json());
+
+// Serve static files from the 'public' directory
+App.use(express.static('public'));
+
 
 
 
